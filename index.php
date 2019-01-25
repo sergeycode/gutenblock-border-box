@@ -16,10 +16,10 @@ if ( !function_exists( 'add_action' ) ) {
  function loadMyBlockFiles(){
    wp_enqueue_script(
      'border-box',
-     plugin_dir_url(__FILE__ ) . 'my-block.js',
+     plugin_dir_url(__FILE__ ) . 'border-box-block.js',
      array('wp-blocks', 'wp-i18n', 'wp-editor'),
      true
    );
  }
 
- add_action('enqueue_block_editro_assets', 'loadMyBlockFiles');
+ add_action('enqueue_block_editor_assets', 'loadMyBlockFiles');
